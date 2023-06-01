@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="libs/bootstrap5/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Personal cabinet</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"></div>
+      </header>
+
+      <!-- main start -->
+      <main class="main">
+        <!-- checkout-sec start -->
+        <section class="checkout-sec">
+          <div class="container">
+            <div class="title">
+              <h1 class="title-text">Оформление заказа</h1>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="checkout-goods d-flex align-items-center">
+                  <img
+                    src="images/product-img1.png"
+                    alt=""
+                    width="196px"
+                    height="120px"
+                  />
+                  <div class="checkout-goods__info">
+                    <h4>Матрас Аскона Mom's love Baby</h4>
+                    <span>Матрас Аскона Mom's love Baby (60x120)</span>
+                  </div>
+
+                  <div
+                    class="checkout-goods__counter d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="counter d-flex align-items-center justify-content-between"
+                    >
+                      <button class="decr">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="13"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke="#7794A1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19.5 12h-15"
+                          />
+                        </svg>
+                      </button>
+                      <span class="count-info">1</span>
+                      <button class="incr">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="13"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke="#7794A1"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <h4 class="counter-price" data-price="2947">2 947р</h4>
+                  </div>
+
+                  <button class="close-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke="#64A1BE"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <!-- ===================================================
+									=================== Sardor htlm style ================  -->
+                <div class="checkout__delivery">
+                  <h3>Способ доставки заказа</h3>
+
+                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-home-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                      >
+                        Заказать доставку
+                      </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                      >
+                        Самовывоз
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-home"
+                      role="tabpanel"
+                      aria-labelledby="pills-home-tab"
+                    >
+                      <div class="checkout__delivery-card">
+                        <div class="checkout__delivery-title">
+                          <fieldset>
+                            <div class="radio-item-container">
+                              <div class="radio-item">
+                                <label for="vanilla">
+                                  <input
+                                    type="radio"
+                                    id="vanilla"
+                                    name="flavor"
+                                    value="vanilla"
+                                  />
+                                  <span
+                                    >Доставка по Москве и МО (рассчитывается
+                                    менеджером после оформления заказа)</span
+                                  >
+                                </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+
+                        <div class="checkout__delivery-search">
+                          <div class="checkout__delivery-input">
+                            <form action="#">
+                              <input type="text" placeholder="Адрес доставки" />
+                            </form>
+                            <div class="delivery__search-icon">
+                              <img src="images/icons/search-icon.svg" alt="" />
+                            </div>
+                          </div>
+                          <p>Введите улицу, дом, номер квартиры (если есть)</p>
+                        </div>
+
+                        <div class="checkout__delivery-checkbox">
+                          <h3>Выберите способ оплаты</h3>
+                          <fieldset>
+                            <div class="radio-item-container">
+                              <div class="radio-item">
+                                <label for="vanilla3">
+                                  <input
+                                    type="radio"
+                                    id="vanilla3"
+                                    name="flavor"
+                                    value="vanilla"
+                                  />
+                                  <span>Наличными при получении</span>
+                                </label>
+                              </div>
+
+                              <div class="radio-item">
+                                <label for="vanilla2">
+                                  <input
+                                    type="radio"
+                                    id="vanilla2"
+                                    name="flavor"
+                                    value="vanilla"
+                                  />
+                                  <span>Картой при получении</span>
+                                </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+
+                        <div class="checkout__delivery-contact">
+                          <h3>Контактная информация</h3>
+
+                          <div class="delivery__contact">
+                            <form action="#">
+                              <div class="delivery__contact-input">
+                                <input type="text" placeholder="Ваше Имя" />
+                                <div class="delivery__search-icon">
+                                  <img
+                                    src="images/icons/delivery__contact-icon1.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="delivery__contact-input">
+                                <input type="text" placeholder="Ваша Фамилия" />
+                                <div class="delivery__search-icon">
+                                  <img
+                                    src="images/icons/delivery__contact-icon1.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="delivery__contact-input">
+                                <input type="number" placeholder="Телефон" />
+                                <div class="delivery__search-icon">
+                                  <img
+                                    src="images/icons/delivery__contact-icon2.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="delivery__contact-input">
+                                <input type="email" placeholder="E-mail" />
+                                <div class="delivery__search-icon">
+                                  <img
+                                    src="images/icons/delivery__contact-icon3.svg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+
+                              <h3>Комментарий к заказу</h3>
+
+                              <textarea
+                                name="text"
+                                placeholder="В этом поле укажите важную по вашему мнению информацию к заказу. Либо оставьте его пустым."
+                              ></textarea>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="tab-pane fade"
+                      id="pills-profile"
+                      role="tabpanel"
+                      aria-labelledby="pills-profile-tab"
+                    >
+											<div class="checkout__delivery-card">
+												<div class="checkout__delivery-title">
+													<fieldset>
+														<div class="radio-item-container">
+															<div class="radio-item">
+																<label for="vanilla4">
+																	<input type="radio" id="vanilla4" name="flavor" value="vanilla" />
+																	<span>Доставка по Москве и МО (рассчитывается
+																		менеджером после оформления заказа)</span>
+																</label>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+											
+												<div class="checkout__delivery-search">
+													<div class="checkout__delivery-input">
+														<form action="#">
+															<input type="text" placeholder="Адрес доставки" />
+														</form>
+														<div class="delivery__search-icon">
+															<img src="images/icons/search-icon.svg" alt="" />
+														</div>
+													</div>
+													<p>Введите улицу, дом, номер квартиры (если есть)</p>
+												</div>
+											
+												<div class="checkout__delivery-checkbox">
+													<h3>Выберите способ оплаты</h3>
+													<fieldset>
+														<div class="radio-item-container">
+															<div class="radio-item">
+																<label for="vanilla5">
+																	<input type="radio" id="vanilla5" name="flavor" value="vanilla" />
+																	<span>Наличными при получении</span>
+																</label>
+															</div>
+											
+															<div class="radio-item">
+																<label for="vanilla6">
+																	<input type="radio" id="vanilla6" name="flavor" value="vanilla" />
+																	<span>Картой при получении</span>
+																</label>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+											
+												<div class="checkout__delivery-contact">
+													<h3>Контактная информация</h3>
+											
+													<div class="delivery__contact">
+														<form action="#">
+															<div class="delivery__contact-input">
+																<input type="text" placeholder="Ваше Имя" />
+																<div class="delivery__search-icon">
+																	<img src="images/icons/delivery__contact-icon1.svg" alt="" />
+																</div>
+															</div>
+											
+															<div class="delivery__contact-input">
+																<input type="text" placeholder="Ваша Фамилия" />
+																<div class="delivery__search-icon">
+																	<img src="images/icons/delivery__contact-icon1.svg" alt="" />
+																</div>
+															</div>
+											
+															<div class="delivery__contact-input">
+																<input type="number" placeholder="Телефон" />
+																<div class="delivery__search-icon">
+																	<img src="images/icons/delivery__contact-icon2.svg" alt="" />
+																</div>
+															</div>
+											
+															<div class="delivery__contact-input">
+																<input type="email" placeholder="E-mail" />
+																<div class="delivery__search-icon">
+																	<img src="images/icons/delivery__contact-icon3.svg" alt="" />
+																</div>
+															</div>
+											
+															<h3>Комментарий к заказу</h3>
+											
+															<textarea name="text"
+																placeholder="В этом поле укажите важную по вашему мнению информацию к заказу. Либо оставьте его пустым."></textarea>
+														</form>
+													</div>
+												</div>
+											</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="checkout__order">
+                  <div class="product-size__box d-flex align-items-center">
+                    <div class="select-menu">
+                      <div class="select">
+                        <span>У меня есть купон</span>
+                        <svg
+                          class="down-arrow"
+                          width="12"
+                          height="7"
+                          viewBox="0 0 12 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.58909 0.244078C1.26366 -0.0813592 0.736018 -0.0813592 0.410582 0.244078C0.0851447 0.569515 0.0851447 1.09715 0.410582 1.42259L5.41058 6.42259C5.73602 6.74803 6.26366 6.74803 6.58909 6.42259L11.5891 1.42259C11.9145 1.09715 11.9145 0.569515 11.5891 0.244078C11.2637 -0.0813592 10.736 -0.0813592 10.4106 0.244078L5.99984 4.65482L1.58909 0.244078Z"
+                            fill="#29ABE2"
+                          />
+                        </svg>
+                      </div>
+                      <div class="options-list">
+                        <div class="option">500р</div>
+                        <div class="option">1200р</div>
+                        <div class="option">1500р</div>
+                        <div class="option">2250р</div>
+                        <div class="option">25000р</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="checkout__order-input">
+                    <form action="#">
+                      <input type="text" placeholder="Введите купон" />
+                      <button>OK</button>
+                    </form>
+                  </div>
+
+                  <div class="checkout__order-info">
+                    <div
+                      class="checkout-info-flex d-flex justify-content-between align-items-center"
+                    >
+                      <h5>Товаров в заказе</h5>
+                      <p>1 шт.</p>
+                    </div>
+
+                    <div
+                      class="checkout-info-flex d-flex justify-content-between align-items-center"
+                    >
+                      <h5>Сумма заказа</h5>
+                      <p>2 947 р</p>
+                    </div>
+
+                    <div
+                      class="checkout-info-flex d-flex justify-content-between align-items-center"
+                    >
+                      <h5>Цена доставки</h5>
+                      <p>Бесплатно</p>
+                    </div>
+
+                    <div
+                      class="checkout-info-title d-flex justify-content-between align-items-center"
+                    >
+                      <h5>К оплате</h5>
+                      <p>2 947р</p>
+                    </div>
+                  </div>
+
+                  <a class="btn-blue" href="#!">Оформить заказ</a>
+
+                  <div class="checkout__order-bottom">
+                    <p>
+                      Оформляя заказ, я принимаю
+                      <a href="#!">пользовательское соглашение</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- checkout-sec start -->
+      </main>
+      <!-- main end -->
+
+      <!-- footer start -->
+      <footer class="footer">
+        <div class="container"></div>
+      </footer>
+      <!-- footer end -->
+    </div>
+
+    <!-- js -->
+    <script src="libs/bootstrap5/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
