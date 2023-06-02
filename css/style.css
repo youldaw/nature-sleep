@@ -280,10 +280,9 @@ header .header-links a:hover {
 	align-items: center;
 	justify-content: center;
 }
-/* .index-content .swiper-slide {
-	height: 424px;
-	width: 800px;
-} */
+.index-content {
+	padding-top: 50px;
+}
 .index-content .swiper-slide img {
 	width: 100%;
 	height: 400px;
