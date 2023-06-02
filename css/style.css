@@ -291,6 +291,8 @@ header .header-links a:hover {
 	height: 420px;
 }
 .index-slider .swiper-slide-active {
+	-webkit-transform: scale(1.6, 1) !important;
+	-ms-transform: scale(1.6, 1) !important;
 	transform: scale(1.6, 1) !important;
 }
 .index-content .index-catalog-btn {
