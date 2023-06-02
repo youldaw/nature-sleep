@@ -20,16 +20,53 @@ try {
 			slidesPerView: 2
 		  },
 		  768: {
-			slidesPerView: 1
+			slidesPerView: 2
 		  },
 		  1024: {
-			slidesPerView: 2
+			slidesPerView: 3
 		  },
 		  1560: {
 			slidesPerView: 3
 		  }
 		}
-	  });
+	});
+
+	var swiper8 = new Swiper(".mySwiper4", {
+		slidesPerView: 3,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: ".swiper-button-next2",
+			prevEl: ".swiper-button-prev2",
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1.2,
+				spaceBetween: 20,
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				pagination: {
+					el: ".swiper-pagination",
+					dynamicBullets: true,
+				},
+			},
+			500: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			980: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1280: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+		},
+	});
 	  
 
 	var swiper = new Swiper(".mySwiper", {
