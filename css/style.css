@@ -76,6 +76,175 @@ svg {
 	flex-direction: column;
 }
 
+header {
+	margin-bottom: 50px;
+}
+header .navbar {
+	padding: 25px 0;
+	width: 100%;
+	justify-content: space-between;
+}
+header .navbar .navbar-city {
+	display: flex;
+	align-items: center;
+}
+header .navbar .navbar-city p {
+	font-size: 18px;
+	line-height: 140%;
+	color: #0D1E25;
+	margin-right: 20px;
+}
+header .navbar .navbar-city a {
+	font-size: 18px;
+	line-height: 21px;
+	position: relative;
+	color: #29ABE2;
+}
+header .navbar .navbar-city a::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #29ABE2;
+}
+header .navbar .navbar-collapse {
+	justify-content: flex-end;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-item {
+	margin-right: 50px;
+}
+header .navbar-expand-lg .navbar-nav .nav-item:last-child {
+	margin-right: 0;
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+	font-size: 18px;
+	line-height: 140%;
+	color: #0D1E25;
+	padding: 0;
+}
+header .navbar-expand-lg .navbar-nav .nav-link:hover {
+	color: #29ABE2;
+}
+
+header .head-assets {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 0;
+}
+header .head-assets .numbers {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+header .head-assets .numbers a {
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+	line-height: 140%;
+	color: #0D1E25;
+	margin-bottom: 4px;
+}
+header .head-assets .numbers a img {
+	margin-right: 12px;
+}
+header .head-assets .numbers span {
+	display: block;
+	font-size: 18px;
+	line-height: 142%;
+	color: #7794A1;
+}
+
+header .head-assets .callback .btn-blue {
+	padding: 13px 35px;
+	font-size: 16px;
+}
+
+header .head-assets .head-search {
+	position: relative;
+	width: 360px;
+}
+header .head-assets .head-search input {
+	width: 100%;
+	height: 50px;
+	background: #F4F8FF;
+	border: 1px solid #29ABE2;
+	border-radius: 10px;
+	padding: 13px 28px;
+}
+header .head-assets .head-search input::placeholder {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140%;
+	color: #64A1BE;
+}
+header .head-assets .head-search button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 24px;
+	margin: auto;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+header .head-assets .head-right {
+	display: flex;
+	align-items: center;
+}
+header .head-assets .favorite {
+	margin-right: 20px;
+}
+header .head-assets .basket,
+header .head-assets .favorite {
+	position: relative;
+}
+
+header .head-assets .basket .basket-count,
+header .head-assets .favorite .favorite-count {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #F4F8FF;
+	border-radius: 50%;
+	font-size: 13px;
+	line-height: 15px;
+	color: #29ABE2;
+}
+/* ----- */
+header .header-links-con {
+	background: #EBF3FF;
+}
+header .header-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 13px 0;
+}
+header .header-links a {
+	font-size: 18px;
+	line-height: 142%;
+	color: #0D1E25;
+}
+header .header-links a.sale {
+	color: #EF5252;
+}
+header .header-links a:hover {
+	color: #29ABE2;
+}
+/* end header */
+
+
+
 .main {
 	flex-grow: 1;
 }
@@ -83,6 +252,86 @@ svg {
 .footer {
 	flex-shrink: 0;
 }
+/* ------------- */
+
+/* start index page */
+.index-block .title {
+	text-align: center;
+}
+.index-block .title h1 {
+	font-weight: 500;
+	font-size: 46px;
+	line-height: 54px;
+	margin-bottom: 50px;
+	color: #0D1E25;
+}
+.index-block .title p {
+	font-size: 22px;
+	line-height: 140%;
+	color: #0D1E25;
+	max-width: 744px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* end index page */
+.index-slider {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* .index-content .swiper-slide {
+	height: 424px;
+	width: 800px;
+} */
+.index-content .swiper-slide img {
+	width: 100%;
+	height: 400px;
+	opacity: 0.6;
+}
+
+.index-slider .swiper-slide-active img {
+	opacity: 1;
+}
+.index-slider .swiper-slide-active {
+	transform: scale(1.6) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .title .title-text {
 	font-family: 'Gilroy-Medium';
@@ -1149,15 +1398,67 @@ span {
 /* =================================================================
 =================== location__title Sardor JS css style end ============= */
 
+footer {
+	background: #0D1E25;
+	padding: 45px 0;
+	margin-top: 120px;
+}
+footer .ftr-block {
+	display: flex;	
+	align-items: center;
+	justify-content: space-between;
+}
+footer .ftr-block .ftr-number {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
 
+footer .ftr-block .ftr-number .ftr-tel {
+	display: flex;
+	align-items: center;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 23px;
+	margin-bottom: 4px;
+	color: #F4F8FF;
+}
+footer .ftr-block .ftr-number .ftr-tel img {
+	margin-right: 12px;
+}
 
-
-
-
-
-
-
-
+footer .ftr-block .ftr-number span {
+	margin-bottom: 16px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140%;
+	color: #EBF3FF;
+}
+footer .ftr-block .ftr-number .btn-blue {
+	padding: 13px 20px;
+	font-size: 16px;
+	line-height: 142%;
+	color: #F4F8FF;
+}
+footer .ftr-block .ftr-menu {
+	display: flex;
+	align-items: flex-start;
+}
+footer .ftr-block .ftr-menu .one {
+	margin-right: 170px;
+}
+footer .ftr-block .ftr-menu .ftr-menu-links {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 12px;
+}
+footer .ftr-block .ftr-menu .ftr-menu-links a {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140%;
+	color: #F4F8FF;
+}
 
 
 
@@ -1178,7 +1479,7 @@ span {
 
 
 /* @media query */
-@media (min-width: 1656px) {
+/* @media (min-width: 1656px) {
 
 	.container,
 	.container-lg,
@@ -1187,6 +1488,24 @@ span {
 	.container-xl {
 		max-width: 1256px;
 		margin: 0 auto;
+	}
+} */
+
+@media (max-width: 1400px) {
+	header .header-links a {
+		font-size: 16px;
+	}
+	header .head-assets .callback .btn-blue {
+		padding: 13px 25px;
+	}
+	header .head-assets .head-search {
+		width: 300px;
+	}
+	header .head-assets .numbers a {
+		font-size: 20px;
+	}
+	header .head-assets .numbers span {
+		font-size: 16px;
 	}
 }
 

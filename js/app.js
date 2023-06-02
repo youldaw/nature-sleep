@@ -1,4 +1,37 @@
 try {
+	var swiper9 = new Swiper(".index-slider", {
+		effect: "coverflow",
+		grabCursor: true,
+		centeredSlides: true,
+		coverflowEffect: {
+		  rotate: 0,
+		  stretch: 0,
+		  depth: 200,
+		  modifier: 1,
+		  slideShadows: true
+		},
+		loop: true,
+		pagination: {
+		  el: ".swiper-pagination",
+		  clickable: true
+		},
+		breakpoints: {
+		  640: {
+			slidesPerView: 2
+		  },
+		  768: {
+			slidesPerView: 1
+		  },
+		  1024: {
+			slidesPerView: 2
+		  },
+		  1560: {
+			slidesPerView: 3
+		  }
+		}
+	  });
+	  
+
 	var swiper = new Swiper(".mySwiper", {
 		loop: true,
 		spaceBetween: 10,
