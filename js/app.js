@@ -1,3 +1,13 @@
+$(function () {
+
+	$('.menu-opener').on('click', function (e) {
+		e.preventDefault();
+		$('.navbar-collapse').toggleClass('active');
+		$(this).toggleClass('active');
+	});
+
+});
+
 try {
 	var swiper9 = new Swiper(".index-slider", {
 		effect: "coverflow",
@@ -16,8 +26,12 @@ try {
 		  clickable: true
 		},
 		breakpoints: {
-		  640: {
-			slidesPerView: 2
+		  340: {
+			slidesPerView: 1.2,
+			depth: 0,
+			modifier: 0,
+			effect: "slide",
+			spaceBetween: 10
 		  },
 		  768: {
 			slidesPerView: 2
@@ -41,7 +55,7 @@ try {
 		breakpoints: {
 			0: {
 				slidesPerView: 1.2,
-				spaceBetween: 20,
+				spaceBetween: 10,
 				centeredSlides: true,
 				centeredSlidesBounds: true,
 				pagination: {
@@ -111,7 +125,7 @@ try {
 		breakpoints: {
 			0: {
 				slidesPerView: 1.2,
-				spaceBetween: 20,
+				spaceBetween: 10,
 				centeredSlides: true,
 				centeredSlidesBounds: true,
 				pagination: {

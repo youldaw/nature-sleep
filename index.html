@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="libs/bootstrap5/bootstrap.min.css">
@@ -15,18 +15,48 @@
 
 <body>
     <div class="wrapper">
+
         <header class="header">
             <div class="container-fluid header-top-con">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <nav class="navbar navbar-expand-lg">
-                                <div class="navbar-city">
+                                <div class="navbar-city pc">
                                     <p>Ваш город</p>
                                     <a href="#!">Новосбирск</a>
                                 </div>
                                 <div class="navbar-collapse">
+                                    <div class="mob">
+                                        <div class="mob-search d-flex align-items-center justify-content-between">
+                                            <div class="navbar-city">
+                                                <p>Ваш город</p>
+                                                <a href="#!">Новосбирск</a>
+                                            </div>
+                                            <a href="#!" class="mob-search-btn"><img src="images/icons/header-search-icon.svg" alt=""></a>
+                                        </div>
+
+                                        <ul class="mob-catalog">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Каталог товаров <img src="images/icons/mob-arrow.svg" alt="">
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Матрасы</a></li>
+                                                    <li><a class="dropdown-item" href="#">Детские матрасы и аксессуары</a></li>
+                                                    <li><a class="dropdown-item" href="#">Чехлы и наматрасники</a></li>
+                                                    <li><a class="dropdown-item" href="#">Подушки и одеяла</a></li>
+                                                    <li><a class="dropdown-item" href="#">Как выбрать матрас</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
                                     <ul class="navbar-nav">
+                                        <li class="nav-item mob">
+                                            <a class="nav-link sale" href="#!">Акции и скидки</a>
+                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#!">О нас</a>
                                         </li>
@@ -43,6 +73,19 @@
                                             <a class="nav-link" href="#!">Контакты</a>
                                         </li>
                                     </ul>
+
+                                    <div class="mob">
+                                        <div class="mob-menu-call">
+                                            <div class="numbers">
+                                                <a href="tel:8 (963) 944-99-91"><img src="images/icons/phone-icon.svg" alt=""> 8 (963)
+                                                    944-99-91</a>
+                                                <span>c 09:00 до 19:00</span>
+                                            </div>
+                                            <div class="callback">
+                                                <a href="#!" class="btn-blue">Заказать звонок</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </nav>
                         </div>
@@ -52,25 +95,33 @@
             <div class="container">
                 <div class="head-assets">
                     <div class="logo">
+                        <div class="mob">
+                            <a href="#!" class="menu-opener">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                            </a>
+                        </div>
                         <a href="#!"><img src="images/logo.png" alt=""></a>
                     </div>
-                    <div class="head-search">
+                    <div class="head-search pc">
                         <form action="#!">
                             <input type="text" placeholder="Поиск по сайту">
                             <button><img src="images/icons/header-search-icon.svg" alt=""></button>
                         </form>
                     </div>
-                    <div class="callback">
+                    <div class="callback pc">
                         <a href="#!" class="btn-blue">Заказать звонок</a>
                     </div>
-                    <div class="numbers">
+                    <div class="numbers pc">
                         <a href="tel:8 (963) 944-99-91"><img src="images/icons/phone-icon.svg" alt=""> 8 (963)
                             944-99-91</a>
                         <span>c 09:00 до 19:00</span>
                     </div>
 
                     <div class="head-right">
-                        <div class="favorite">
+                        <a href="tel:" class="mob"><img src="images/icons/phone-icon.svg" alt=""></a>
+                        <div class="favorite pc">
                             <a href="#!">
                                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid header-links-con">
+            <div class="container-fluid header-links-con pc">
                 <div class="container">
                     <div class="header-links">
                         <a href="#!">Матрасы</a>
@@ -358,6 +409,12 @@
 
             <section class="index-tab">
                 <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 title">
+                            <h1>Онлайн-конструктор матрасов</h1>
+                            <p>С помощью представленного ниже конструктора матрасов Вы легко сможете изменить состав стандартной модели матраса или сконструировать индивидуальную модель матраса.</p>
+                        </div>
+                    </div>
                     <div class="tab-block">
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -367,13 +424,16 @@
                                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Заказной размер</button>
                             </li>
 
-                            <a href="#!" class="how-it-works">Как это работает?</a>
+                            <a href="#!" class="how-it-works pc">Как это работает?</a>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="index-tab-block">
                                     <div class="tab-size">
-                                        <p><img src="images/icons/ruler-icon.svg" alt=""> Задайте размер</p>
+                                        <div class="tab-size-text">
+                                            <p><img src="images/icons/ruler-icon.svg" alt=""> Задайте размер</p>
+                                            <a href="#!" class="how-it-works mob">Как это работает?</a>
+                                        </div>
                                         
                                         <div class="size-in">
                                             <div class="product-size__box">
@@ -459,7 +519,7 @@
 
                                     <div class="total-price">
                                         <p>Итоговая цена:</p>
-                                        <span>0 <img src="images/icons/money.svg" alt=""></span>
+                                        <span>0 &#8381;</span>
                                     </div>
                                 </div>
                             </div>
@@ -483,7 +543,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <div class="advan-block">
                                 <div class="advan-img">
                                     <img src="images/icons/our-advantages-icon1.svg" alt="">
@@ -494,7 +554,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <div class="advan-block">
                                 <div class="advan-img">
                                     <img src="images/icons/our-advantages-icon2.svg" alt="">
@@ -505,7 +565,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <div class="advan-block">
                                 <div class="advan-img">
                                     <img src="images/icons/our-advantages-icon3.svg" alt="">
@@ -516,7 +576,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <div class="advan-block">
                                 <div class="advan-img">
                                     <img src="images/icons/our-advantages-icon4.svg" alt="">
@@ -587,10 +647,12 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="swiper-pagination mob"></div>
                     </div>
                     <div class="d-flex align-items-center slide-arrow">
-                        <div class="swiper-button-next swiper-button-next2"></div>
-                        <div class="swiper-button-prev swiper-button-prev2"></div>
+                        <div class="swiper-button-next2"></div>
+                        <div class="swiper-button-prev2"></div>
                     </div>
                 </div>
             </section>
@@ -626,9 +688,43 @@
             </div>
         </footer>
         <!-- footer end -->
+
+        <div class="ftr-mob">
+            <a href="#!">
+                <span class="ftr-mob-img">
+                    <img src="images/icons/ftr-catalog-icon.svg" alt="">
+                </span>
+                <span>Каталог</span>
+            </a>
+            <a href="#!">
+                <span class="ftr-mob-img">
+                    <img src="images/icons/ftr-search-icon.svg" alt="">
+                </span>
+                <span>Поиск</span>
+            </a>
+            <a href="#!">
+                <span class="ftr-mob-img">
+                    <img src="images/icons/ftr-sale-icon.svg" alt="">
+                </span>
+                <span>Акции</span>
+            </a>
+            <a href="#!">
+                <span class="ftr-mob-img">
+                    <img src="images/icons/ftr-favorite-icon.svg" alt="">
+                </span>
+                <span>Избранное</span>
+            </a>
+            <a href="#!">
+                <span class="ftr-mob-img">
+                    <img src="images/icons/ftr-profile-icon.svg" alt="">
+                </span>
+                <span>Профиль</span>
+            </a>
+        </div>
     </div>
 
     <!-- js -->
+    <script src="js/jquery-3.7.0.min.js.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="libs/bootstrap5/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
